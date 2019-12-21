@@ -1,5 +1,5 @@
 # team-schedule
-Simple schedule written in java
+Simple game scheduling tool written in java
 
 # Usage from command line
 >team-schedule input_file.json [output_file]
