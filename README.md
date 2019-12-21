@@ -1,13 +1,13 @@
 # team-schedule
 Simple schedule written in java
 
-#Usage from command line
+# Usage from command line
 >team-schedule input_file.json [output_file]
 
-#Input data example
+# Input data example
 see input/teams.json
 
-#Output data
+# Output data
 for the example input data should look like:
 ```
 First round:
