@@ -8,7 +8,7 @@ Simple schedule written in java
 see input/teams.json
 
 # Output data
-for the example input data should look like:
+for the example input data the output should look like:
 ```
 First round:
 So 18.08.2019 | Bayern München - RB Leipzig
