@@ -45,12 +45,12 @@ public class Schedule {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("E dd.MM.yyyy", Locale.GERMANY);
 
         return round.stream()
-        .filter(gameDay -> gameDay.getGames().size() > 0)
-        .map(
-            gameDay -> gameDay.getGames().stream()
-                .map(game -> gameDay.getDate().format(formatter) + " | " + game.getHost().getName() + " - " + game.getGuest().getName())
-                .collect(Collectors.joining("\n"))
-        )
-        .collect(Collectors.joining("\n"));
+            .filter(gameDay -> gameDay.getGames().size() > 0)
+            .map(
+                gameDay -> gameDay.getGames().stream()
+                    .map(game -> gameDay.getDate().format(formatter) + " | " + game.getHost().getName() + " - " + game.getGuest().getName())
+                    .collect(Collectors.joining("\n"))
+            )
+            .collect(Collectors.joining("\n"));
     }
 }
