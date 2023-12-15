@@ -1,6 +1,6 @@
 package schedule.validation;
 
-import javafx.util.Pair;
+import schedule.model.Pair;
 import schedule.model.InputData;
 import schedule.model.Team;
 

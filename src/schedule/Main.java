@@ -1,14 +1,15 @@
 package schedule;
 
-import java.io.*;
-import java.util.List;
-
-import javafx.util.Pair;
 import schedule.io.InputReader;
 import schedule.io.OutputWriter;
 import schedule.logic.SchedulingLogic;
-import schedule.model.*;
+import schedule.model.InputData;
+import schedule.model.Pair;
+import schedule.model.Schedule;
 import schedule.validation.InputDataValidator;
+
+import java.io.File;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,9 +33,9 @@ public class Main {
 
             Pair<Boolean, List<String>> validationResult = InputDataValidator.validate(inputData);
 
-            if (!validationResult.getKey()) {
+            if (!validationResult.getFirst()) {
                 System.out.println("Invalid input data: ");
-                validationResult.getValue().forEach(System.out::println);
+                validationResult.getSecond().forEach(System.out::println);
 
                 return;
             }
